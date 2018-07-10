@@ -37,10 +37,7 @@
                :repo "davidlandry93/ros_emacs_utils"
                :files ("rosemacs" "rosemacs/*"))
               :excluded t)
-    ;; (helm-ros :location local))
-    (helm-ros :location (recipe
-                         :fetcher github
-                         :repo "JakeBrawer/helm-ros")))
+    (helm-ros :location local))
   "The list of Lisp packages required by the spaceros layer.")
 
 ;; Init rosemacs
