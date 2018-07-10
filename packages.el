@@ -40,7 +40,7 @@
     ;; (helm-ros :location local))
     (helm-ros :location (recipe
                          :fetcher github
-                         :repo "JakeBrawer/helm-ros"))
+                         :repo "JakeBrawer/helm-ros")))
   "The list of Lisp packages required by the spaceros layer.")
 
 ;; Init rosemacs
