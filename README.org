@@ -1,20 +1,13 @@
 #+TITLE: spaceros layer
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../css/readtheorg.css" />
 
-#+CAPTION: logo
-
-# The maximum height of the logo should be 200 pixels.
-[[img/spaceros.png]]
-
 * Table of Contents                                        :TOC_4_org:noexport:
- - [[Description][Description]]
- - [[Install][Install]]
- - [[Key bindings][Key bindings]]
+- [[Description][Description]]
+- [[Install][Install]]
+- [[Key bindings][Key bindings]]
 
 * Description
-This layer does wonderful things:
-  - thing01
-
+  This layer is a wrapper around [[https://github.com/syohex/ros-helm][helm-ros]], a package that allows you manage   run [[http://www.ros.org/][ROS]] processes via helm.
 * Install
 To use this contribution add it to your =~/.spacemacs=
 
@@ -24,6 +17,14 @@ To use this contribution add it to your =~/.spacemacs=
 
 * Key bindings
 
-| Key Binding     | Description    |
-|-----------------+----------------|
-| ~<SPC> x x x~   | Does thing01   |
+| Key Binding   | Description                                         |
+|---------------+-----------------------------------------------------|
+| ~SPC a R c~   | Start a ~roscore~                                   |
+| ~SPC a R i~   | Invalidate the ros-helm-cache                       |
+| ~SPC a R r c~ | launches launch file in focused buffer              |
+| ~SPC a R r l~ | Open searchable buffer for launching launch files   |
+| ~SPC a R r r~ | Open searchable buffer for launching launch files   |
+| ~SPC a R t e~ | Open searchable buffer for an echoing active topics |
+| ~SPC a R t i~ | Runs ~rostopic info~ on an active topic             |
+| ~SPC a R t l~ | Lists all active topics                             |
+| ~SPC a R t l~ | Lists all active topics                             |
